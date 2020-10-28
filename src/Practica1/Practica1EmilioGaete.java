@@ -32,7 +32,7 @@ public class Practica1EmilioGaete {
         int m3 = (dif % 3600) / 60;
         int s3 = (dif % 3600) % 60;
         System.out.println(h3 + ":" + m3 + ":" + s3);
-        /////////
+        /////
     }
 }
 
