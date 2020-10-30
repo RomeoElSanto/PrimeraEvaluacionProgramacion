@@ -45,11 +45,7 @@ public class Practica3_EmilioGaete {
                         int tri2 = sc.nextInt();
                         System.out.println("Lado 3");
                         int tri3 = sc.nextInt();
-                        if (tri1 + tri2 > tri3) {
-                            System.out.printf("SI");
-                        } else if (tri1 + tri3 > tri2) {
-                            System.out.printf("SI");
-                        } else if (tri2 + tri3 > tri1) {
+                        if ((tri1 + tri2 > tri3) && (tri1 + tri3 > tri2) && (tri2 + tri3 > tri1)) {
                             System.out.printf("SI");
                         } else {
                             System.out.printf("NO");
