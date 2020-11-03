@@ -9,16 +9,16 @@ public class Practica3_EmilioGaete {
         System.out.println("1: if");
         System.out.println("2: switch");
         String num1 = sc.next();
-        switch (num1) {
-            case "1":
+        switch (num1) { // Creamos un primer menú switch para dividir las dos opciones principales, if y switch.
+            case "1": // En la opción de if colocamos un segundo menú con todos los ejercicios disponibles para escoger.
                 System.out.println("Introduce el numero de ejercicio que quieres que resulva: ");
-                System.out.println("1:");
-                System.out.println("2:");
-                System.out.println("5:");
-                System.out.println("6:");
-                System.out.println("7:");
+                System.out.println("1: Par Impar");
+                System.out.println("2: Sueldo Anual");
+                System.out.println("5: Triángulos");
+                System.out.println("6: Fiesta de Marmotas");
+                System.out.println("7: Calificación");
                 String numif = sc.next();
-                switch (numif) {
+                switch (numif) { // Dentro del switch principal creamos un segundo para las opciones del metodo if, cada numero correspondiendo a un ejercicio de la lista.
                     case "1":
                         System.out.println("Introduce un numero");
                         int nume1 = sc.nextInt();
@@ -40,12 +40,12 @@ public class Practica3_EmilioGaete {
                     case "5":
                         System.out.println("Introduce los tres lados de tu triangulo:");
                         System.out.println("Lado 1");
-                        int tri1 = sc.nextInt();
+                        int a = sc.nextInt();
                         System.out.println("Lado 2");
-                        int tri2 = sc.nextInt();
+                        int b = sc.nextInt();
                         System.out.println("Lado 3");
-                        int tri3 = sc.nextInt();
-                        if ((tri1 + tri2 > tri3) && (tri1 + tri3 > tri2) && (tri2 + tri3 > tri1)) {
+                        int c = sc.nextInt();
+                        if ((a + b > c) && (a + c > b) && (b + c > a)) {
                             System.out.printf("SI");
                         } else {
                             System.out.printf("NO");
@@ -83,27 +83,27 @@ public class Practica3_EmilioGaete {
                             System.out.printf("Introduce un numero entre 0 y 10");
                         }
                         break;
-                    default:
+                    default: // Al final del switch para el metodo if colocamos un mensaje de alerta por si se introduce un numero que no exista en la lista de ejercicios
                         System.out.println("El Ejercicio " + numif + " no forma parte de los ejercicios");
                         break;
                 }
                 break;
-            case "2":
+            case "2": // Segundo caso de nuestro switch principal para los ejercicios del segundo metodo.
                 System.out.println("Introduce el número de ejercicio que quieres que resuelva: ");
                 System.out.println("2. Lenguaje programación");
                 System.out.println("3. Número correspondiente");
                 System.out.println("4. Harry Potter");
                 System.out.println("5. Direcciones");
                 String numswitch = sc.next();
-                switch (numswitch) {
+                switch (numswitch) { // Abrimos un segundo switch anidado en este caso dentro de la segunda opcion principal para desplegar el menu con los ejercicios de la parte switch
                     case "2":
                         System.out.println("¿Qué lenguaje de programación estás estudiando?");
                         System.out.println("a. Java");
                         System.out.println("b. Kotlin");
                         System.out.println("c. Scala");
                         System.out.println("d. Python");
-                        String respuesta1 = sc.next();
-                        switch (respuesta1) {
+                        String res1 = sc.next();
+                        switch (res1) {
                             case "a":
                                 System.out.println("¡Sí!");
                                 break;
@@ -123,8 +123,8 @@ public class Practica3_EmilioGaete {
                         break;
                     case "3":
                         System.out.println("Introduce un número en letra (1-9): ");
-                        String respuesta2 = sc.next();
-                        switch (respuesta2) {
+                        String res2 = sc.next();
+                        switch (res2) {
                             case "uno":
                                 System.out.println("1");
                                 break;
@@ -162,8 +162,8 @@ public class Practica3_EmilioGaete {
                         System.out.println("Hufflepuff");
                         System.out.println("Slytherin");
                         System.out.println("Ravenclaw");
-                        String respuesta3 = sc.next();
-                        switch (respuesta3) {
+                        String res3 = sc.next();
+                        switch (res3) {
                             case "Gryffindor":
                                 System.out.println("Valentía");
                                 break;
@@ -177,7 +177,7 @@ public class Practica3_EmilioGaete {
                                 System.out.println("Intelecto");
                                 break;
                             default:
-                                System.out.println(respuesta3 + " no es una casa válida");
+                                System.out.println(res3 + " no es una casa válida");
                                 break;
                         }
                         break;
@@ -188,8 +188,8 @@ public class Practica3_EmilioGaete {
                         System.out.println("3. Izquierda");
                         System.out.println("4. Derecha");
                         System.out.println("0. No mover");
-                        int respuesta4 = sc.nextInt();
-                        switch (respuesta4) {
+                        int res4 = sc.nextInt();
+                        switch (res4) {
                             case 1:
                                 System.out.println("Subir");
                                 break;
@@ -210,12 +210,15 @@ public class Practica3_EmilioGaete {
                                 break;
                         }
                       break;
-                    default:
+                    default: // Al final del segundo switch anidado ponemos el mismo mensaje de error por si se introduce un numero que no pertenece a la lista de ejercicios
                         System.out.println("El ejercicio " + numswitch + " no forma parte de la práctica");
                         break;
                 }
-
+            default:// Mensaje de error en el switch principal por si no introducimos una de la dos opciones, en este caso solo 1 o 2.
+                System.out.printf("Opciones solo 1 o 2");
+                break;
         }
+
     }
 }
 
