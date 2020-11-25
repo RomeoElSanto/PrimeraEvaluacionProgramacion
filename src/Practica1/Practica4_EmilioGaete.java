@@ -47,10 +47,12 @@ public class Practica4_EmilioGaete {
                 int num5 = sc.nextInt();
                 int random = (int) ((Math.random() * 100) + 1); //Usamos la función Math.random para introducir un valor aleatorio en la variable "random" cada vez que ejecutamos el programa
                 do {// Con este bucle do-while hacemos las comprobaciones para imprimir por patalla las pistas sobre si el numero introducido es menor o mayor que la solucion
-                    if (num5 > random) {
+                    if (num5 > random && num5 <=100) {
                         System.out.println("El numero aleatorio es menor:");
-                    } else {
+                    }  else if (num5 < random && num5 >= 1){
                         System.out.println("El numero aleatorio es mayor");
+                    } else {
+                        System.out.println("Introduce un numero entre los dos valores que se te piden");
                     }
                     System.out.println("Introduce un numero entre 1 y 100");
                     num5 = sc.nextInt();
