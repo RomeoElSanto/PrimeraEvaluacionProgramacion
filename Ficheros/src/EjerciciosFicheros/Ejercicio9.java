@@ -4,6 +4,11 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
+
+/*
+9. Escribir un programa que obtiene la línea de mayor tamaño y la
+de menor tamaño dentro de un fichero de texto.
+ */
 public class Ejercicio9 {
     public static void main(String[] args) {
         String ruta  = "C:\\Users\\EmiTheCapo\\Downloads\\EjerciciosFicheros\\lineas.txt";

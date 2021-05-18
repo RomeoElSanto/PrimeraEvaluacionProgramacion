@@ -4,6 +4,11 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
+
+/*
+6. Escribe un programa en Java que encuentre el número más grande
+en el fichero dataset_91007.txt
+ */
 public class Ejercicio6 {
     public static void main(String[] args) {
         String ruta = "C:\\Users\\EmiTheCapo\\Downloads\\EjerciciosFicheros\\dataset_91007.txt";

@@ -5,6 +5,16 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
+
+/*
+8. Escribir un programa Java que lee texto por teclado y lo escribe
+en un fichero de texto llamado datos.txt. El proceso consiste en
+leer una línea de texto por teclado y escribirla en el fichero.
+Este proceso se repite hasta que se introduce por teclado la
+cadena FIN. La cadena FIN que indica el final de lectura no se
+debe escribir en el fichero.
+
+ */
 public class Ejercicio8 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

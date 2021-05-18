@@ -2,6 +2,12 @@ package EjerciciosFicheros;
 
 import java.io.*;
 
+
+/*
+2. Partiendo del fichero de csv de ejemplo, crear un programa de
+Java que muestre los datos de todos aquellos restaurantes cuyo
+código postal empiece por 6.
+ */
 public class Ejercicio2 {
     public static void main(String[] args) {
         String ruta = "C:\\Users\\EmiTheCapo\\Downloads\\EjerciciosFicheros\\Restaurantes.csv";

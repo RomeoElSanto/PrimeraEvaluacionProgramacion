@@ -4,6 +4,13 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
+
+/*
+7. Escribir un programa que contenga un método que reciba por
+parámetro la ruta de un archivo y devuelva un array con las
+cadenas que dicho archivo almacena. Las cadenas vienen separadas
+por un asterisco.
+ */
 public class Ejercicio7 {
     public static void main(String[] args) {
         String ruta = "C:\\Users\\EmiTheCapo\\Downloads\\EjerciciosFicheros\\cadenas.txt";

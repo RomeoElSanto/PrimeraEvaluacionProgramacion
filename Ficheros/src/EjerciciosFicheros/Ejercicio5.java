@@ -3,6 +3,12 @@ package EjerciciosFicheros;
 import java.io.File;
 import java.util.Scanner;
 
+
+/*
+5. Crear un programa en Java que borre el fichero cuya ruta ha sido
+introducida por el usuario.
+
+ */
 public class Ejercicio5 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

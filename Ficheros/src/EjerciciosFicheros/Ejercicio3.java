@@ -4,6 +4,11 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
+/*
+3. Partiendo del fichero de csv de ejemplo, crear un programa de
+Java que permita al usuario añadir datos nuevos a ese fichero,
+utilizando el mismo formato que los ya existentes.
+ */
 public class Ejercicio3 {
     public static void main(String[] args) {
         String ruta = "C:\\Users\\EmiTheCapo\\Downloads\\EjerciciosFicheros\\Restaurantes.csv";
